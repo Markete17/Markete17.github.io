@@ -194,11 +194,6 @@ a:visited.highlight {
 .accessibility-panel #toggleAccessPanel .ada-icon svg {
     width: 26px;
 }
-
-.accessibility-panel #toggleAccessPanel .ada-icon path {
-    fill: white;
-}
-
 .accessibility-panel #toggleAccessPanel:focus,
 .accessibility-panel #toggleAccessPanel:hover {
     width: 250px !important;
