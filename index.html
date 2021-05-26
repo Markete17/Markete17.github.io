@@ -98,7 +98,6 @@
         </div>
     </div>
     <!-- Accessibility Helper Panel - End -->
-    
     <div id="content-wrapper">
         <header>
         <div class="navegacion">
@@ -124,7 +123,7 @@
         <div role="main">
         <!--content-->
         <div id="presentacion">
-            <h2 class="center"><span>1. </span>Presentación</h2>
+            <h2 class="center" role="complementary"><span>1. </span>Presentación</h2>
             <blockquote lang="es" cite="https://akifrases.com/frase/195934#:~:text=Frase%20de%20Orhan%20Pamuk,tiempo%20se%20transforma%20en%20espacio.%E2%80%9D&text=%E2%80%9CEl%20amor%20es%20el%20anhelo,el%20mismo%20lugar%20que%20ella.&text=Biografia%3A%20Ferit%20Orhan%20Pamuk%20es,Premio%20Nobel%20de%20Literatura%202006.">
                 <div id="cita">
                     <div id="imagecita">
@@ -154,7 +153,7 @@
                 <div class="desc-foto">
                     <p>Video presentación del Museo del Prado.</p>
                 </div>
-                <div id="audio" aria-describedby="transcripcion"></div>
+                <div id="audio"></div>
                 <p id="transcripcion"></p>
                 <p>
                     <a title="Mostrar la transcripción del video" onclick="transcribir()"><b><span
@@ -165,41 +164,41 @@
         </div>
 
         <div id="horario">
-            <h2 class="center"><span>2. </span>Horario</h2>
-            <table style="overflow-x:auto;">
+            <h2 class="center" role="complementary"><span>2. </span>Horario</h2>
+            <table id="table" title="Horario de apertura del Museo del Prado" style="overflow-x:auto;">
                 <caption>Horario de apertura del Museo del Prado</caption>
                 <thead>
                     <tr>
                         <td></td>
-                        <th scope="col">Lunes</th>
-                        <th scope="col">Martes</th>
-                        <th scope="col">Miércoles</th>
-                        <th scope="col">Jueves</th>
-                        <th scope="col">Viernes</th>
-                        <th scope="col">Sábado</th>
-                        <th scope="col">Domingo</th>
+                        <th scope="col" id="l">Lunes</th>
+                        <th scope="col" id="m">Martes</th>
+                        <th scope="col" id="x">Miércoles</th>
+                        <th scope="col" id="j">Jueves</th>
+                        <th scope="col" id="v">Viernes</th>
+                        <th scope="col" id="s">Sábado</th>
+                        <th scope="col" id="d">Domingo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th scope="row">No Festivos</th>
-                        <td>10-20 h</td>
-                        <td>10-20 h</td>
-                        <td>10-20 h</td>
-                        <td>10-20 h</td>
-                        <td>10-20 h</td>
-                        <td>10-20 h</td>
-                        <td>10-17 h</td>
+                        <td headers="l">10-20 h</td>
+                        <td headers="m">10-20 h</td>
+                        <td headers="x">10-20 h</td>
+                        <td headers="j">10-20 h</td>
+                        <td headers="v">10-20 h</td>
+                        <td headers="s">10-20 h</td>
+                        <td headers="d">10-17 h</td>
                     </tr>
                     <tr>
                         <th scope="row">Festivos</th>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
-                        <td>10-17 h</td>
+                        <td headers="l">10-17 h</td>
+                        <td headers="m">10-17 h</td>
+                        <td headers="x">10-17 h</td>
+                        <td headers="j">10-17 h</td>
+                        <td headers="v">10-17 h</td>
+                        <td headers="s">10-17 h</td>
+                        <td headers="d">10-17 h</td>
                     </tr>
                 </tbody>
             </table>
@@ -208,7 +207,7 @@
         </div>
 
         <div id="precios">
-            <h2 class="center"><span>3. </span>Precios</h2>
+            <h2 class="center" role="complementary"><span>3. </span>Precios</h2>
             <ul>
                 <li>
                     <p><b>Entrada general:</b> 15 euros.</p>
@@ -235,7 +234,7 @@
         </div>
 
         <div id="exposiciones">
-            <h2 class="center"><span>4. </span>Nuestras exposiciones</h2>
+            <h2 class="center" role="complementary"><span>4. </span>Nuestras exposiciones</h2>
             <p>Este es un recorrido en el que encontrarás algunas exposiciones que te permitirán <b>disfrutar</b> del arte de la pintura. </p>
             <p>Especialmente apto para ir con niños y niñas, cada cuadro ha sido elegido para dar a conocer quince pintores y una pintora fundamentales en la historia del arte. Ante ellos podrás recrearte en una actividad tan gratificante como es la
                 <b>contemplación</b>.</p>
@@ -249,7 +248,7 @@
         </div>
 
         <div id="reserva">
-            <h2 class="center"><span>5. </span>Reserva tu exposición guiada</h2>
+            <h2 class="center" role="complementary"><span>5. </span>Reserva tu exposición guiada</h2>
             <div id="content-form">
 
                 <h3>Rellena el formulario</h3>
@@ -345,7 +344,7 @@
         </div>
 
         <div id="contacto">
-            <h2 class="center"><span>6. </span>Póngase en contácto con nosotros</h2>
+            <h2 class="center" role="complementary"><span>6. </span>Póngase en contácto con nosotros</h2>
             <p>Queremos que el <b>Museo del Prado</b> sea <b>para todos</b> y ofrecer la <b>mejor experencia</b> para nuestro público.</p>
             <p>Por favor, para cualquier <b>duda</b> o <b>aclaración</b>, no dude en contactar con nosotros a través del siguiente enlace:</p>
             <div class="enlace"> <a title="Contactar con el Museo del Prado" href="aboutUs.html"><b>Contactar con el museo</b></a></div>
