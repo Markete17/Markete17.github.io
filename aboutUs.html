@@ -97,7 +97,7 @@
 
         <nav role="navigation">
             <h2 id="menu" class="center">Menú - Contacto</h2>
-            <ul class="menu" role="menu">
+            <ul class="menu" role="menu" aria-labelledby="menu">
                 <li><a title="Accede al formulario de contacto" href="#contacto"><b>1.Contacta con nosotros</b></a></li>
                 <li><a title="Accede a la localización del museo" href="#localizacion"><b>2.Nuestra localización</b></a></li>
             </ul>
@@ -137,7 +137,7 @@
 
                         </p>
                         <div><label for="mensaje"><b>Escriba su consulta:</b><span class="reqField">*</span></label><br />
-                            <textarea id="mensaje" title="Escriba su consulta aqui" placeholder="Escriba aquí su consulta." name="mensaje" cols="50" rows="20"></textarea>
+                            <textarea role="listbox" id="mensaje" title="Escriba su consulta aqui" placeholder="Escriba aquí su consulta." name="mensaje" cols="50" rows="20"></textarea>
                             <div>Le ayudaremos con cualquier consulta.</div>
                             <br>
                             <span class="errorMsg" id="mensajeError"></span>
