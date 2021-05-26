@@ -13,7 +13,7 @@
 
 <body id="inicio" role="document">
     <!-- Accessibility Helper Panel -->
-    <div id="accessPanel" class="accessibility-panel" accesskey="q" role="banner">
+    <div id="accessPanel" class="accessibility-panel" accesskey="q">
         <button id="toggleAccessPanel">
     <span class="ada-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -100,6 +100,7 @@
     <!-- Accessibility Helper Panel - End -->
     
     <div id="content-wrapper" role="main">
+        <header role="banner">
         <div class="navegacion">
             <div id="block1">
                 <b>Navegación:</b> <a title="Ir a inicio" href="#inicio" class="navtext">Inicio</a>
@@ -108,6 +109,7 @@
                 <h1 class="title">Museo del prado</h1>
             </div>
         </div>
+        </header>
         <nav role="navigation">
             <h2 class="center">Menú - Inicio</h2>
             <ul class="menu" role="menu" aria-label="menu">
@@ -146,14 +148,13 @@
             </div>
             <p>A continuación, tiene un video que describirá cómo es el museo del prado y qué te puedes encontrar.</p>
             <div class="frame-contenedor">
-                <iframe title="Ver video presentación Museo del Prado" width="560" height="315" src="https://www.youtube.com/embed/6-d2uEjlU-c" title="Video presentación del Museo del Prado" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe title="Ver video presentación del Museo del Prado" width="560" height="315" src="https://www.youtube.com/embed/6-d2uEjlU-c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="transcripcion-container">
                 <div class="desc-foto">
                     <p>Video presentación del Museo del Prado.</p>
                 </div>
                 <div id="audio" aria-describedby="transcripcion"></div>
-                <track src="audio/transcripcion.mp3" kind="subtitles" srclang="en" label="English">
                 <p id="transcripcion"></p>
                 <p>
                     <a title="Mostrar la transcripción del video" onclick="transcribir()"><b><span
@@ -352,6 +353,7 @@
             <a class="volver" title="Volver al menú" href="#inicio"><b>Volver al menú</b></a>
         </div>
     </div>
-</body>
 <footer role="contentinfo">Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
+</body>
+
 </html>

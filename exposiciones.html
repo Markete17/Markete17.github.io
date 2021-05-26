@@ -12,10 +12,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<header role="presentation">Diseño de un sitio web accesible</header>
 <body id="inicio" role="document">
     <!-- Accessibility Helper Panel -->
-    <div id="accessPanel" class="accessibility-panel" accesskey="q" role="banner">
+    <div id="accessPanel" class="accessibility-panel" accesskey="q">
         <button id="toggleAccessPanel">
     <span class="ada-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -102,14 +101,16 @@
     <!-- Accessibility Helper Panel - End -->
     
     <div id="content-wrapper" role="main">
-        <div class="navegacion">
-            <div id="block1">
-                <b>Navegación:</b> <a title="Volver a inicio" href="index.html#exposiciones" class="navtext">Volver a Inicio</a> / <a title="Ir a Exposiciones" href="#exposiciones" class="navtext">Exposiciones</a>
+        <header role="banner">
+            <div class="navegacion">
+                <div id="block1">
+                    <b>Navegación:</b> <a title="Ir a inicio" href="#inicio" class="navtext">Inicio</a>
+                </div>
+                <div id="block2">
+                    <h1 class="title">Museo del prado</h1>
+                </div>
             </div>
-            <div id="block2">
-                <h1 class="title">Museo del prado</h1>
-            </div>
-        </div>
+        </header>
 
         <nav role="navigation">
             <h2 id="menu" class="center" >Menú - Exposiciones</h2>
@@ -369,7 +370,7 @@
             <a class="volver" title="Volver al menú" href="#inicio"><b>Volver al menú</b></a>
         </div>
     </div>
-
+    <footer role="contentinfo">Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
 </body>
-<footer role="contentinfo">Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
+
 </html>

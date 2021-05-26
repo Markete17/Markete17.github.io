@@ -13,7 +13,7 @@
 
 <body id="inicio" role="document">
     <!-- Accessibility Helper Panel -->
-    <div id="accessPanel" class="accessibility-panel" accesskey="q" role="banner">
+    <div id="accessPanel" class="accessibility-panel" accesskey="q">
         <button id="toggleAccessPanel">
     <span class="ada-icon">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -100,14 +100,16 @@
     <!-- Accessibility Helper Panel - End -->
     
     <div id="content-wrapper" role="main">
-        <div class="navegacion">
-            <div id="block1">
-                <b>Navegación:</b> <a title="Ir a inicio" href="index.html#contacto" class="navtext">Volver a Inicio</a> / <a title="Ir a contacto" href="aboutUs.html" class="navtext">Contacto</a>
+        <header role="banner">
+            <div class="navegacion">
+                <div id="block1">
+                    <b>Navegación:</b> <a title="Ir a inicio" href="#inicio" class="navtext">Inicio</a>
+                </div>
+                <div id="block2">
+                    <h1 class="title">Museo del prado</h1>
+                </div>
             </div>
-            <div id="block2">
-                <h1  class="title">Museo del prado</h1>
-            </div>
-        </div>
+        </header>
 
         <nav role="navigation">
             <h2 id="menu" class="center">Menú - Contacto</h2>
@@ -181,7 +183,6 @@
 
     </div>
 
-
+    <footer role="contentinfo">Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
 </body>
-<footer role="contentinfo">Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
 </html>
