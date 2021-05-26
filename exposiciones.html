@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="css/galeria.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-
-<body id="inicio" role="main">
+<header role="presentation"></header>
+<body id="inicio">
     <!-- Accessibility Helper Panel -->
-    <div id="accessPanel" class="accessibility-panel" accesskey="q">
+    <div id="accessPanel" class="accessibility-panel" accesskey="q" role="banner">
         <button id="toggleAccessPanel">
         <span class="ada-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -86,17 +86,17 @@
     </div>
     <!-- Accessibility Helper Panel - End -->
     <script src="js/index.js"></script>
-    <div id="content-wrapper">
-        <div role="navigation" class="navegacion">
+    <div id="content-wrapper" role="main">
+        <div class="navegacion">
             <div id="block1">
                 <b>Navegación:</b> <a title="Volver a inicio" href="index.html#exposiciones" class="navtext">Volver a Inicio</a> / <a title="Ir a Exposiciones" href="#exposiciones" class="navtext">Exposiciones</a>
             </div>
-            <div role="banner" id="block2">
+            <div id="block2">
                 <h1 class="title">Museo del prado</h1>
             </div>
         </div>
 
-        <nav>
+        <nav role="navigation">
             <h2 id="menu" class="center" >Menú - Exposiciones</h2>
             <ul class="menu" role="menu">
                 <li><a title="Accede a la exposición: Pasiones Mitológicas" href="#PasionesMitologicas"><b>1.Pasiones Mitológicas</b></a></li>
@@ -356,5 +356,5 @@
     </div>
 
 </body>
-
+<footer>Marcos Ruiz Muñoz y Jesús Élez - Multimedia - 2021</footer>
 </html>
