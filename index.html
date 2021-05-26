@@ -90,9 +90,9 @@
             <div class="rangeSliders">
                 <fieldset>
                     <legend>Ajusta los colores del artículo</legend>
-                    Rojo: <input class="rangeArticleBg" type="range" min="0" max="255" value="0">
-                    Verde: <input class="rangeArticleBg" type="range" min="0" max="255" value="0">
-                    Azul: <input class="rangeArticleBg" type="range" min="0" max="255" value="0">
+                    Rojo: <input class="rangeBg" type="range" min="0" max="255" value="155">
+                    Verde: <input class="rangeBg" type="range" min="0" max="255" value="195">
+                    Azul: <input class="rangeBg" type="range" min="0" max="255" value="253">
                 </fieldset>
 
             </div>
@@ -153,7 +153,8 @@
                 <div class="desc-foto">
                     <p>Video presentación del Museo del Prado.</p>
                 </div>
-                <div id="audio"></div>
+                <div id="audio" aria-describedby="transcripcion"></div>
+                <track src="audio/transcripcion.mp3" kind="subtitles" srclang="en" label="English">
                 <p id="transcripcion"></p>
                 <p>
                     <a title="Mostrar la transcripción del video" onclick="transcribir()"><b><span
