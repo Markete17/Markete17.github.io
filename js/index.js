@@ -303,7 +303,6 @@ document.addEventListener("click", function(event) {
 
     if (el == toggleAccessPanel) {
         if (!accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%');
             accessPanel.classList.toggle("visible");
         } else {
             accessPanel.classList.toggle("visible");
@@ -337,7 +336,6 @@ document.addEventListener("click", function(event) {
         contrastBg = [255, 255, 255];
         contrastText = [0, 0, 0];
         fontSize = 0;
-        $('body').css('margin-right', '25%');
 
         for (var i = 0; i < 3; i++) {
             bgColorSliders[i].value = 255;
@@ -366,12 +364,6 @@ document.addEventListener("click", function(event) {
         $('#rangeArticle2').val('255');
         $('#rangeArticle3').val('255');
         changeArticleBg();
-
-        if (accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%')
-        } else {
-            $('body').css('margin-right', '');
-        }
     }
 
     if (el == remove) {
@@ -388,7 +380,6 @@ document.addEventListener("click", function(event) {
         if (!accessPanel.classList.contains("visible") == true) {
             accessPanel.classList.add("visible").focus();
         } else {
-            $('body').css('margin-right', '0%');
             accessPanel.classList.remove("visible");
         }
     }
@@ -449,10 +440,8 @@ document.addEventListener("keydown", function(event) {
 
     if (key == "81" || key == "27") {
         if (!accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%');
             accessPanel.classList.add("visible").focus();
         } else {
-            $('body').css('margin-right', '');
             accessPanel.classList.remove("visible");
         }
     }
@@ -524,12 +513,6 @@ document.addEventListener("keydown", function(event) {
             $('#rangeArticle2').val('255');
             $('#rangeArticle3').val('255');
             changeArticleBg();
-
-            if (accessPanel.classList.contains("visible") == true) {
-                $('body').css('margin-right', '25%')
-            } else {
-                $('body').css('margin-right', '');
-            }
         }
         if (key == '69') {
             document.styleSheets[0].disabled = true;
