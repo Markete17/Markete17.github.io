@@ -717,7 +717,7 @@ function validateAbout() {
             applyError("apellidos", "&nbsp;Debes ingresar tus apellidos.");
         }
         var emailAbout = document.forms["myForm"]["email"].value;
-        if (email == "") {
+        if (emailAbout == "") {
             applyError("email", "&nbsp;El correo que has introducido no es correcto. Ej: museo@gmail.com");
         }
         var mensajeAbout = document.forms["myForm"]["mensaje"].value;
