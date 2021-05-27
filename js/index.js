@@ -183,6 +183,7 @@ function comprobarExposiciones() {
 // Define Accessibility Panel
 
 var accessPanel = document.getElementById("accessPanel");
+var accessPanel2 = document.getElementById("accessPanel2");
 var toggleAccessPanel = document.getElementById("toggleAccessPanel");
 var closeAccessPanel = document.getElementById("closeAccessPanel");
 
@@ -302,6 +303,13 @@ document.addEventListener("click", function(event) {
     var el = event.target;
 
     if (el == toggleAccessPanel) {
+        if (!accessPanel.classList.contains("visible") == true) {
+            accessPanel.classList.toggle("visible");
+        } else {
+            accessPanel.classList.toggle("visible");
+        }
+    }
+    if (el == accessPanel2) {
         if (!accessPanel.classList.contains("visible") == true) {
             accessPanel.classList.toggle("visible");
         } else {
