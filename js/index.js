@@ -183,6 +183,7 @@ function comprobarExposiciones() {
 // Define Accessibility Panel
 
 var accessPanel = document.getElementById("accessPanel");
+var accessPanel2 = document.getElementById("accessPanel2");
 var toggleAccessPanel = document.getElementById("toggleAccessPanel");
 var closeAccessPanel = document.getElementById("closeAccessPanel");
 
@@ -303,7 +304,13 @@ document.addEventListener("click", function(event) {
 
     if (el == toggleAccessPanel) {
         if (!accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%');
+            accessPanel.classList.toggle("visible");
+        } else {
+            accessPanel.classList.toggle("visible");
+        }
+    }
+    if (el == accessPanel2) {
+        if (!accessPanel.classList.contains("visible") == true) {
             accessPanel.classList.toggle("visible");
         } else {
             accessPanel.classList.toggle("visible");
@@ -337,7 +344,6 @@ document.addEventListener("click", function(event) {
         contrastBg = [255, 255, 255];
         contrastText = [0, 0, 0];
         fontSize = 0;
-        $('body').css('margin-right', '25%');
 
         for (var i = 0; i < 3; i++) {
             bgColorSliders[i].value = 255;
@@ -366,12 +372,6 @@ document.addEventListener("click", function(event) {
         $('#rangeArticle2').val('255');
         $('#rangeArticle3').val('255');
         changeArticleBg();
-
-        if (accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%')
-        } else {
-            $('body').css('margin-right', '');
-        }
     }
 
     if (el == remove) {
@@ -388,7 +388,6 @@ document.addEventListener("click", function(event) {
         if (!accessPanel.classList.contains("visible") == true) {
             accessPanel.classList.add("visible").focus();
         } else {
-            $('body').css('margin-right', '0%');
             accessPanel.classList.remove("visible");
         }
     }
@@ -449,10 +448,8 @@ document.addEventListener("keydown", function(event) {
 
     if (key == "81" || key == "27") {
         if (!accessPanel.classList.contains("visible") == true) {
-            $('body').css('margin-right', '25%');
             accessPanel.classList.add("visible").focus();
         } else {
-            $('body').css('margin-right', '');
             accessPanel.classList.remove("visible");
         }
     }
@@ -524,12 +521,6 @@ document.addEventListener("keydown", function(event) {
             $('#rangeArticle2').val('255');
             $('#rangeArticle3').val('255');
             changeArticleBg();
-
-            if (accessPanel.classList.contains("visible") == true) {
-                $('body').css('margin-right', '25%')
-            } else {
-                $('body').css('margin-right', '');
-            }
         }
         if (key == '69') {
             document.styleSheets[0].disabled = true;
@@ -726,7 +717,7 @@ function validateAbout() {
             applyError("apellidos", "&nbsp;Debes ingresar tus apellidos.");
         }
         var emailAbout = document.forms["myForm"]["email"].value;
-        if (email == "") {
+        if (emailAbout == "") {
             applyError("email", "&nbsp;El correo que has introducido no es correcto. Ej: museo@gmail.com");
         }
         var mensajeAbout = document.forms["myForm"]["mensaje"].value;
@@ -822,7 +813,7 @@ function transcribir() {
             '<p>Este edificio aleda&ntilde;o es el cas&oacute;n del buen <b>Retiro</b> tambi&eacute;n pertenece al <b>Prado</b> y tuvo el privilegio de acoger el <b>Guernica de Picasso</b> cuando la emblem&aacute;tica obra del pintor malague&ntilde;o volvi&oacute; a Espa&ntilde;a en 1989. En 1992 fue trasladado a nuestro siguiente destino."</p>' +
             '<p><b>[Música]</b>&nbsp;</p>');
         $('#transcripcionboton').text('Ocultar Transcripción');
-        $('#audio').html('                Audio del video.<br><audio controls>' +
+        $('#audio').html('                Audio del video.<br><audio aria-describedby="transcripcion" controls>' +
             '<source src="audio/transcripcion.ogg" type="audio/ogg">' +
             '<source src="audio/transcripcion.mp3" type="audio/mp3">' +
             'Your browser does not support the audio element.</audio>');
