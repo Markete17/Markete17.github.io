@@ -353,46 +353,46 @@ a:hover {
         display: flex;
         flex-direction: column;
     }
-}
-.formulario-au {
-    display: flex;
-    flex-direction: column;
-}
-#aboutus-content {
-    display: flex;
-    flex-direction: column;
-}
-textarea{
-    width: 100%;
-}
-#aboutus-content input{
-    width: 100%;
-}
-form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
-form p {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.presentacion {
-    display: flex;
-    flex-direction: column;
-}
 
-#cita {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 100%;
-    padding: 0%;
-    
-}
-#cita img {
-    margin-left: 0%;
-    width: 100%;
-}
+    .formulario-au {
+        display: flex;
+        flex-direction: column;
+    }
+    #aboutus-content {
+        display: flex;
+        flex-direction: column;
+    }
+    textarea{
+        width: 100%;
+    }
+    #aboutus-content input{
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+    form p {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .presentacion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #cita {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        width: 100%;
+        padding: 0%;
+        
+    }
+    #cita img {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
